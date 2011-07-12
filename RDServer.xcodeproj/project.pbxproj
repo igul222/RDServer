@@ -1,0 +1,290 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C3F9CA913CCCE7E00E8D57E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C3F9CA813CCCE7E00E8D57E /* Cocoa.framework */; };
+		4C3F9CB313CCCE7E00E8D57E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C3F9CB113CCCE7E00E8D57E /* InfoPlist.strings */; };
+		4C3F9CB513CCCE7E00E8D57E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3F9CB413CCCE7E00E8D57E /* main.m */; };
+		4C3F9CB913CCCE7E00E8D57E /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4C3F9CB713CCCE7E00E8D57E /* Credits.rtf */; };
+		4C3F9CBC13CCCE7E00E8D57E /* RDServerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3F9CBB13CCCE7E00E8D57E /* RDServerAppDelegate.m */; };
+		4C3F9CBF13CCCE7F00E8D57E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C3F9CBD13CCCE7F00E8D57E /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4C3F9CA413CCCE7E00E8D57E /* RDServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RDServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C3F9CA813CCCE7E00E8D57E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		4C3F9CAB13CCCE7E00E8D57E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		4C3F9CAC13CCCE7E00E8D57E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		4C3F9CAD13CCCE7E00E8D57E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4C3F9CB013CCCE7E00E8D57E /* RDServer-Info.plist */ = {isa = PBXFileReference; path = "RDServer-Info.plist"; sourceTree = "<group>"; };
+		4C3F9CB213CCCE7E00E8D57E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4C3F9CB413CCCE7E00E8D57E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4C3F9CB613CCCE7E00E8D57E /* RDServer-Prefix.pch */ = {isa = PBXFileReference; path = "RDServer-Prefix.pch"; sourceTree = "<group>"; };
+		4C3F9CB813CCCE7E00E8D57E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		4C3F9CBA13CCCE7E00E8D57E /* RDServerAppDelegate.h */ = {isa = PBXFileReference; path = RDServerAppDelegate.h; sourceTree = "<group>"; };
+		4C3F9CBB13CCCE7E00E8D57E /* RDServerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDServerAppDelegate.m; sourceTree = "<group>"; };
+		4C3F9CBE13CCCE7F00E8D57E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C3F9CA113CCCE7E00E8D57E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C3F9CA913CCCE7E00E8D57E /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C3F9C9913CCCE7E00E8D57E = {
+			isa = PBXGroup;
+			children = (
+				4C3F9CAE13CCCE7E00E8D57E /* RDServer */,
+				4C3F9CA713CCCE7E00E8D57E /* Frameworks */,
+				4C3F9CA513CCCE7E00E8D57E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4C3F9CA513CCCE7E00E8D57E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C3F9CA413CCCE7E00E8D57E /* RDServer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C3F9CA713CCCE7E00E8D57E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C3F9CA813CCCE7E00E8D57E /* Cocoa.framework */,
+				4C3F9CAA13CCCE7E00E8D57E /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C3F9CAA13CCCE7E00E8D57E /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C3F9CAB13CCCE7E00E8D57E /* AppKit.framework */,
+				4C3F9CAC13CCCE7E00E8D57E /* CoreData.framework */,
+				4C3F9CAD13CCCE7E00E8D57E /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		4C3F9CAE13CCCE7E00E8D57E /* RDServer */ = {
+			isa = PBXGroup;
+			children = (
+				4C3F9CBA13CCCE7E00E8D57E /* RDServerAppDelegate.h */,
+				4C3F9CBB13CCCE7E00E8D57E /* RDServerAppDelegate.m */,
+				4C3F9CBD13CCCE7F00E8D57E /* MainMenu.xib */,
+				4C3F9CAF13CCCE7E00E8D57E /* Supporting Files */,
+			);
+			path = RDServer;
+			sourceTree = "<group>";
+		};
+		4C3F9CAF13CCCE7E00E8D57E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C3F9CB013CCCE7E00E8D57E /* RDServer-Info.plist */,
+				4C3F9CB113CCCE7E00E8D57E /* InfoPlist.strings */,
+				4C3F9CB413CCCE7E00E8D57E /* main.m */,
+				4C3F9CB613CCCE7E00E8D57E /* RDServer-Prefix.pch */,
+				4C3F9CB713CCCE7E00E8D57E /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C3F9CA313CCCE7E00E8D57E /* RDServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C3F9CC213CCCE7F00E8D57E /* Build configuration list for PBXNativeTarget "RDServer" */;
+			buildPhases = (
+				4C3F9CA013CCCE7E00E8D57E /* Sources */,
+				4C3F9CA113CCCE7E00E8D57E /* Frameworks */,
+				4C3F9CA213CCCE7E00E8D57E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RDServer;
+			productName = RDServer;
+			productReference = 4C3F9CA413CCCE7E00E8D57E /* RDServer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C3F9C9B13CCCE7E00E8D57E /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 4C3F9C9E13CCCE7E00E8D57E /* Build configuration list for PBXProject "RDServer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4C3F9C9913CCCE7E00E8D57E;
+			productRefGroup = 4C3F9CA513CCCE7E00E8D57E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C3F9CA313CCCE7E00E8D57E /* RDServer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C3F9CA213CCCE7E00E8D57E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C3F9CB313CCCE7E00E8D57E /* InfoPlist.strings in Resources */,
+				4C3F9CB913CCCE7E00E8D57E /* Credits.rtf in Resources */,
+				4C3F9CBF13CCCE7F00E8D57E /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C3F9CA013CCCE7E00E8D57E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C3F9CB513CCCE7E00E8D57E /* main.m in Sources */,
+				4C3F9CBC13CCCE7E00E8D57E /* RDServerAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4C3F9CB113CCCE7E00E8D57E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C3F9CB213CCCE7E00E8D57E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4C3F9CB713CCCE7E00E8D57E /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C3F9CB813CCCE7E00E8D57E /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		4C3F9CBD13CCCE7F00E8D57E /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C3F9CBE13CCCE7F00E8D57E /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4C3F9CC013CCCE7F00E8D57E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4C3F9CC113CCCE7F00E8D57E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4C3F9CC313CCCE7F00E8D57E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RDServer/RDServer-Prefix.pch";
+				INFOPLIST_FILE = "RDServer/RDServer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4C3F9CC413CCCE7F00E8D57E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RDServer/RDServer-Prefix.pch";
+				INFOPLIST_FILE = "RDServer/RDServer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C3F9C9E13CCCE7E00E8D57E /* Build configuration list for PBXProject "RDServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C3F9CC013CCCE7F00E8D57E /* Debug */,
+				4C3F9CC113CCCE7F00E8D57E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C3F9CC213CCCE7F00E8D57E /* Build configuration list for PBXNativeTarget "RDServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C3F9CC313CCCE7F00E8D57E /* Debug */,
+				4C3F9CC413CCCE7F00E8D57E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4C3F9C9B13CCCE7E00E8D57E /* Project object */;
+}
