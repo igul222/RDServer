@@ -8,20 +8,9 @@
 
 #import "Worker.h"
 #import "AppUtils.h"
-
-#define EOF_STR @"@@@"
-#define EOF_DATA [EOF_STR dataUsingEncoding:NSUTF8StringEncoding]
-
-#define NOOP_MSG @"NOOP"
-#define AUTHENTICATION_REQUEST_MSG @"AREQ"
-#define AUTHENTICATE_MSG @"AUTH"
-#define CURRENT_RESOLUTION_MSG @"RESN"
-#define SCREEN_MSG @"SCRN"
-#define SCREEN_RECT_MSG @"RECT"
-#define ALL_RECTS_RECEIVED_MSG @"RCVD"
+#import "ProtocolConstants.h"
 
 #define DEFAULT_TAG 0
-
 #define PIXEL_LOC(x,y) ((x)+(dirtyRegionsResolution.width*(y)))
 
 typedef struct _RectArray {

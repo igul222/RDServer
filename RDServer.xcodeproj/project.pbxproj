@@ -58,6 +58,7 @@
 		4C3F9CE013CCD07600E8D57E /* ScreenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenController.m; sourceTree = "<group>"; };
 		4C681B9913CD3F7200B867B7 /* Worker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Worker.h; sourceTree = "<group>"; };
 		4C681B9A13CD3F7200B867B7 /* Worker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Worker.m; sourceTree = "<group>"; };
+		4C73BAE513D1F0770072942F /* ProtocolConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtocolConstants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +125,7 @@
 				4C3F9CE013CCD07600E8D57E /* ScreenController.m */,
 				4C681B9913CD3F7200B867B7 /* Worker.h */,
 				4C681B9A13CD3F7200B867B7 /* Worker.m */,
+				4C73BAE513D1F0770072942F /* ProtocolConstants.h */,
 			);
 			path = RDServer;
 			sourceTree = "<group>";

@@ -8,11 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-#define TELNET_MODE YES
-#define PORT 51617
-#define PASSWORD @"hello"
-#define TIMEOUT 10.0
-
 #define FORMAT(format, ...) [NSString stringWithFormat:(format), ##__VA_ARGS__]
 
 @interface AppUtils : NSObject
