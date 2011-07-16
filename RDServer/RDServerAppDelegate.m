@@ -10,6 +10,7 @@
 #import "AppUtils.h"
 #import "ScreenController.h"
 #import "Worker.h"
+#import "ProtocolConstants.h"
 
 @implementation RDServerAppDelegate
 
