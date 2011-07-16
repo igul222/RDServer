@@ -7,9 +7,18 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "GCDAsyncSocket.h"
+#import "Worker.h"
 
-@interface RDServerAppDelegate : NSObject <NSApplicationDelegate> {
+@class ServerSocketDelegate;
+@interface RDServerAppDelegate : NSObject <NSApplicationDelegate, GCDAsyncSocketDelegate, WorkerManager> {
     NSWindow *window;
+    
+    dispatch_queue_t socketQueue;
+    GCDAsyncSocket *listenSocket;
+    
+    int workersCreated;
+    int workersDestroyed;
 }
 
 @property (assign) IBOutlet NSWindow *window;

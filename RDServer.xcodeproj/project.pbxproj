@@ -13,6 +13,16 @@
 		4C3F9CB913CCCE7E00E8D57E /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4C3F9CB713CCCE7E00E8D57E /* Credits.rtf */; };
 		4C3F9CBC13CCCE7E00E8D57E /* RDServerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3F9CBB13CCCE7E00E8D57E /* RDServerAppDelegate.m */; };
 		4C3F9CBF13CCCE7F00E8D57E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C3F9CBD13CCCE7F00E8D57E /* MainMenu.xib */; };
+		4C3F9CC713CCCEA600E8D57E /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3F9CC613CCCEA600E8D57E /* GCDAsyncSocket.m */; };
+		4C3F9CD313CCCEB400E8D57E /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3F9CCA13CCCEB400E8D57E /* DDAbstractDatabaseLogger.m */; };
+		4C3F9CD413CCCEB400E8D57E /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3F9CCC13CCCEB400E8D57E /* DDASLLogger.m */; };
+		4C3F9CD513CCCEB400E8D57E /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3F9CCE13CCCEB400E8D57E /* DDFileLogger.m */; };
+		4C3F9CD613CCCEB400E8D57E /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3F9CD013CCCEB400E8D57E /* DDLog.m */; };
+		4C3F9CD713CCCEB400E8D57E /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3F9CD213CCCEB400E8D57E /* DDTTYLogger.m */; };
+		4C3F9CDB13CCCF1C00E8D57E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C3F9CDA13CCCF1C00E8D57E /* Security.framework */; };
+		4C3F9CDE13CCCFC000E8D57E /* AppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3F9CDD13CCCFC000E8D57E /* AppUtils.m */; };
+		4C3F9CE113CCD07600E8D57E /* ScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3F9CE013CCD07600E8D57E /* ScreenController.m */; };
+		4C681B9B13CD3F7200B867B7 /* Worker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C681B9A13CD3F7200B867B7 /* Worker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,14 +31,33 @@
 		4C3F9CAB13CCCE7E00E8D57E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		4C3F9CAC13CCCE7E00E8D57E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		4C3F9CAD13CCCE7E00E8D57E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		4C3F9CB013CCCE7E00E8D57E /* RDServer-Info.plist */ = {isa = PBXFileReference; path = "RDServer-Info.plist"; sourceTree = "<group>"; };
+		4C3F9CB013CCCE7E00E8D57E /* RDServer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RDServer-Info.plist"; sourceTree = "<group>"; };
 		4C3F9CB213CCCE7E00E8D57E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4C3F9CB413CCCE7E00E8D57E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4C3F9CB613CCCE7E00E8D57E /* RDServer-Prefix.pch */ = {isa = PBXFileReference; path = "RDServer-Prefix.pch"; sourceTree = "<group>"; };
+		4C3F9CB613CCCE7E00E8D57E /* RDServer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RDServer-Prefix.pch"; sourceTree = "<group>"; };
 		4C3F9CB813CCCE7E00E8D57E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		4C3F9CBA13CCCE7E00E8D57E /* RDServerAppDelegate.h */ = {isa = PBXFileReference; path = RDServerAppDelegate.h; sourceTree = "<group>"; };
+		4C3F9CBA13CCCE7E00E8D57E /* RDServerAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDServerAppDelegate.h; sourceTree = "<group>"; };
 		4C3F9CBB13CCCE7E00E8D57E /* RDServerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDServerAppDelegate.m; sourceTree = "<group>"; };
 		4C3F9CBE13CCCE7F00E8D57E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		4C3F9CC513CCCEA600E8D57E /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		4C3F9CC613CCCEA600E8D57E /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		4C3F9CC913CCCEB400E8D57E /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
+		4C3F9CCA13CCCEB400E8D57E /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
+		4C3F9CCB13CCCEB400E8D57E /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogger.h; sourceTree = "<group>"; };
+		4C3F9CCC13CCCEB400E8D57E /* DDASLLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDASLLogger.m; sourceTree = "<group>"; };
+		4C3F9CCD13CCCEB400E8D57E /* DDFileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDFileLogger.h; sourceTree = "<group>"; };
+		4C3F9CCE13CCCEB400E8D57E /* DDFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFileLogger.m; sourceTree = "<group>"; };
+		4C3F9CCF13CCCEB400E8D57E /* DDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLog.h; sourceTree = "<group>"; };
+		4C3F9CD013CCCEB400E8D57E /* DDLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLog.m; sourceTree = "<group>"; };
+		4C3F9CD113CCCEB400E8D57E /* DDTTYLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTTYLogger.h; sourceTree = "<group>"; };
+		4C3F9CD213CCCEB400E8D57E /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTTYLogger.m; sourceTree = "<group>"; };
+		4C3F9CDA13CCCF1C00E8D57E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		4C3F9CDC13CCCFC000E8D57E /* AppUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppUtils.h; sourceTree = "<group>"; };
+		4C3F9CDD13CCCFC000E8D57E /* AppUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppUtils.m; sourceTree = "<group>"; };
+		4C3F9CDF13CCD07600E8D57E /* ScreenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenController.h; sourceTree = "<group>"; };
+		4C3F9CE013CCD07600E8D57E /* ScreenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenController.m; sourceTree = "<group>"; };
+		4C681B9913CD3F7200B867B7 /* Worker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Worker.h; sourceTree = "<group>"; };
+		4C681B9A13CD3F7200B867B7 /* Worker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Worker.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C3F9CDB13CCCF1C00E8D57E /* Security.framework in Frameworks */,
 				4C3F9CA913CCCE7E00E8D57E /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,9 +76,10 @@
 		4C3F9C9913CCCE7E00E8D57E = {
 			isa = PBXGroup;
 			children = (
+				4C3F9CDA13CCCF1C00E8D57E /* Security.framework */,
 				4C3F9CAE13CCCE7E00E8D57E /* RDServer */,
-				4C3F9CA713CCCE7E00E8D57E /* Frameworks */,
-				4C3F9CA513CCCE7E00E8D57E /* Products */,
+				4C3F9CD813CCCEDF00E8D57E /* Vendor */,
+				4C3F9CAF13CCCE7E00E8D57E /* Supporting Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +89,7 @@
 				4C3F9CA413CCCE7E00E8D57E /* RDServer.app */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		4C3F9CA713CCCE7E00E8D57E /* Frameworks */ = {
@@ -67,6 +99,7 @@
 				4C3F9CAA13CCCE7E00E8D57E /* Other Frameworks */,
 			);
 			name = Frameworks;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		4C3F9CAA13CCCE7E00E8D57E /* Other Frameworks */ = {
@@ -82,10 +115,15 @@
 		4C3F9CAE13CCCE7E00E8D57E /* RDServer */ = {
 			isa = PBXGroup;
 			children = (
+				4C3F9CDC13CCCFC000E8D57E /* AppUtils.h */,
+				4C3F9CDD13CCCFC000E8D57E /* AppUtils.m */,
 				4C3F9CBA13CCCE7E00E8D57E /* RDServerAppDelegate.h */,
 				4C3F9CBB13CCCE7E00E8D57E /* RDServerAppDelegate.m */,
 				4C3F9CBD13CCCE7F00E8D57E /* MainMenu.xib */,
-				4C3F9CAF13CCCE7E00E8D57E /* Supporting Files */,
+				4C3F9CDF13CCD07600E8D57E /* ScreenController.h */,
+				4C3F9CE013CCD07600E8D57E /* ScreenController.m */,
+				4C681B9913CD3F7200B867B7 /* Worker.h */,
+				4C681B9A13CD3F7200B867B7 /* Worker.m */,
 			);
 			path = RDServer;
 			sourceTree = "<group>";
@@ -93,6 +131,8 @@
 		4C3F9CAF13CCCE7E00E8D57E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4C3F9CA513CCCE7E00E8D57E /* Products */,
+				4C3F9CA713CCCE7E00E8D57E /* Frameworks */,
 				4C3F9CB013CCCE7E00E8D57E /* RDServer-Info.plist */,
 				4C3F9CB113CCCE7E00E8D57E /* InfoPlist.strings */,
 				4C3F9CB413CCCE7E00E8D57E /* main.m */,
@@ -100,6 +140,42 @@
 				4C3F9CB713CCCE7E00E8D57E /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			path = RDServer;
+			sourceTree = "<group>";
+		};
+		4C3F9CC813CCCEB400E8D57E /* CocoaLumberjack */ = {
+			isa = PBXGroup;
+			children = (
+				4C3F9CC913CCCEB400E8D57E /* DDAbstractDatabaseLogger.h */,
+				4C3F9CCA13CCCEB400E8D57E /* DDAbstractDatabaseLogger.m */,
+				4C3F9CCB13CCCEB400E8D57E /* DDASLLogger.h */,
+				4C3F9CCC13CCCEB400E8D57E /* DDASLLogger.m */,
+				4C3F9CCD13CCCEB400E8D57E /* DDFileLogger.h */,
+				4C3F9CCE13CCCEB400E8D57E /* DDFileLogger.m */,
+				4C3F9CCF13CCCEB400E8D57E /* DDLog.h */,
+				4C3F9CD013CCCEB400E8D57E /* DDLog.m */,
+				4C3F9CD113CCCEB400E8D57E /* DDTTYLogger.h */,
+				4C3F9CD213CCCEB400E8D57E /* DDTTYLogger.m */,
+			);
+			path = CocoaLumberjack;
+			sourceTree = "<group>";
+		};
+		4C3F9CD813CCCEDF00E8D57E /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				4C3F9CD913CCCEF000E8D57E /* GCDAsyncSocket */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		4C3F9CD913CCCEF000E8D57E /* GCDAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				4C3F9CC513CCCEA600E8D57E /* GCDAsyncSocket.h */,
+				4C3F9CC613CCCEA600E8D57E /* GCDAsyncSocket.m */,
+				4C3F9CC813CCCEB400E8D57E /* CocoaLumberjack */,
+			);
+			name = GCDAsyncSocket;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +240,15 @@
 			files = (
 				4C3F9CB513CCCE7E00E8D57E /* main.m in Sources */,
 				4C3F9CBC13CCCE7E00E8D57E /* RDServerAppDelegate.m in Sources */,
+				4C3F9CC713CCCEA600E8D57E /* GCDAsyncSocket.m in Sources */,
+				4C3F9CD313CCCEB400E8D57E /* DDAbstractDatabaseLogger.m in Sources */,
+				4C3F9CD413CCCEB400E8D57E /* DDASLLogger.m in Sources */,
+				4C3F9CD513CCCEB400E8D57E /* DDFileLogger.m in Sources */,
+				4C3F9CD613CCCEB400E8D57E /* DDLog.m in Sources */,
+				4C3F9CD713CCCEB400E8D57E /* DDTTYLogger.m in Sources */,
+				4C3F9CDE13CCCFC000E8D57E /* AppUtils.m in Sources */,
+				4C3F9CE113CCD07600E8D57E /* ScreenController.m in Sources */,
+				4C681B9B13CD3F7200B867B7 /* Worker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +368,7 @@
 				4C3F9CC413CCCE7F00E8D57E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
