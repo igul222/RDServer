@@ -11,13 +11,13 @@
 typedef struct _ScreenRes {
     NSUInteger width;
     NSUInteger height;
-} ScreenRes;
-extern ScreenRes ScreenResMake(NSUInteger width, NSUInteger height);
-extern BOOL ScreenResEqual(ScreenRes res1, ScreenRes res2);
+} RDScreenRes;
+extern RDScreenRes ScreenResMake(NSUInteger width, NSUInteger height);
+extern BOOL ScreenResEqual(RDScreenRes res1, RDScreenRes res2);
 
 @interface ScreenController : NSObject
 
-+(ScreenRes)currentResolution;
++(RDScreenRes)currentResolution;
 +(void)changeResolution;
 +(void)restoreOriginalResolution;
 

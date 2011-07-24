@@ -22,8 +22,12 @@
     NSTimeInterval lastMessage;
     
     BOOL registeredForScreenUpdates;
+    
+    BOOL sendingRects;
+    
     NSMutableData *dirtyScreenRegions;
-    ScreenRes dirtyRegionsResolution;
+    RDScreenRes dirtyRegionsResolution;
+    CGRect dirtyRect;
 }
 @property(retain) GCDAsyncSocket *socket;
 @property(assign) id <WorkerManager> manager;

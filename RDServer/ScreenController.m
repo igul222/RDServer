@@ -8,6 +8,7 @@
 
 #import "ScreenController.h"
 #import "AppUtils.h"
+#import "ProtocolConstants.h"
 
 #define SMALL_SCREEN_WIDTH 1024
 #define SMALL_SCREEN_HEIGHT 600
@@ -18,15 +19,15 @@ struct screenMode {
     size_t bitsPerPixel;
 };
 
-static ScreenRes originalResolution = {0,0};
+static RDScreenRes originalResolution = {0,0};
 static BOOL originalResolutionSet = NO;
 
-ScreenRes ScreenResMake(NSUInteger width, NSUInteger height) {
-    ScreenRes res = {width, height};
+RDScreenRes ScreenResMake(NSUInteger width, NSUInteger height) {
+    RDScreenRes res = {width, height};
     return res;
 }
 
-BOOL ScreenResEqual(ScreenRes res1, ScreenRes res2) {
+BOOL ScreenResEqual(RDScreenRes res1, RDScreenRes res2) {
     return ((res1.width == res2.width) && (res1.height == res2.height));
 }
 
@@ -35,7 +36,7 @@ BOOL ScreenResEqual(ScreenRes res1, ScreenRes res2) {
 +(void)setOriginalResolution;
 +(size_t)displayBitsPerPixelForMode:(CGDisplayModeRef)mode;
 +(CGDisplayModeRef)copyBestMatchForMode:(struct screenMode)screenMode;
-+(void)changeResolutionTo:(ScreenRes)resolution;
++(void)changeResolutionTo:(RDScreenRes)resolution;
 
 @end
 
@@ -43,11 +44,11 @@ BOOL ScreenResEqual(ScreenRes res1, ScreenRes res2) {
 
 #pragma mark - Screen resolution
 
-+(ScreenRes)currentResolution {
++(RDScreenRes)currentResolution {
     NSUInteger width = (NSUInteger)[[NSScreen mainScreen] frame].size.width;
     NSUInteger height = (NSUInteger)[[NSScreen mainScreen] frame].size.height;
     
-    ScreenRes res = {width,height};
+    RDScreenRes res = {width,height};
     return res;
 }
 
@@ -166,7 +167,11 @@ BOOL ScreenResEqual(ScreenRes res1, ScreenRes res2) {
 }
 
 
-+(void)changeResolutionTo:(ScreenRes)resolution {
++(void)changeResolutionTo:(RDScreenRes)resolution {
+#ifdef DONT_CHANGE_RESOLUTION
+    if(DONT_CHANGE_RESOLUTION)
+        return;
+#endif
     [AppUtils log:FORMAT(@"Attempting to change resolution to (%i,%i)",resolution.width,resolution.height)];
     
     if(ScreenResEqual(resolution,[self currentResolution]))
@@ -178,7 +183,7 @@ BOOL ScreenResEqual(ScreenRes res1, ScreenRes res2) {
     
     CGError result = CGDisplaySetDisplayMode(display, mode, NULL);
     if(result == 0) {
-        ScreenRes newRes = [self currentResolution];
+        RDScreenRes newRes = [self currentResolution];
         [AppUtils log:FORMAT(@"Changed resolution to (%i,%i)", newRes.width, newRes.height)];
     } else {
         NSError *error = [NSError errorWithDomain:@"ScreenController" code:result userInfo:nil];
