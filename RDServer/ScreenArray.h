@@ -7,11 +7,22 @@
 //
 #import "ScreenController.h"
 
+typedef struct _RectArray {
+    CGRect *array;
+    CGRectCount count;
+    unsigned int capacity;
+    unsigned int retainCount;
+} RectArray;
+
 @interface ScreenArray : NSObject {
     RDScreenRes resolution; 
     BOOL *array;
 }
 
 -(id)initWithSize:(RDScreenRes)size;
+-(void)fillRects:(CGRect *)rectArray count:(CGRectCount)count;
+-(RectArray)dirtyRects;
+
+-(NSUInteger)height;
 
 @end
