@@ -36,7 +36,7 @@ static inline void fill_rect(BOOL *array,
             resolution = size;
             size_t arrLength = sizeof(BOOL) * resolution.width * resolution.height;
             array = malloc(arrLength);
-            memset(array,  (int)YES, arrLength);
+            memset(array, (int)YES, arrLength);
         }
     }
     return self;

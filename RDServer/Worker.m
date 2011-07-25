@@ -51,8 +51,7 @@ static void screenRefreshCallback(CGRectCount count, const CGRect *rectArray, vo
         registeredForScreenUpdates = NO;
     }
     
-    [dirtyScreenRegions autorelease];
-    
+    [screenArray autorelease];
     self.socket.delegate = nil;
     self.socket = nil;
     [super dealloc];
