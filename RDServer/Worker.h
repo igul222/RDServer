@@ -14,6 +14,7 @@
 -(void)workerDidDisconnect;
 @end
 
+@class ScreenArray;
 @interface Worker : NSObject <GCDAsyncSocketDelegate> {
     dispatch_queue_t dispatchQueue;
     GCDAsyncSocket *socket;
@@ -22,12 +23,8 @@
     NSTimeInterval lastMessage;
     
     BOOL registeredForScreenUpdates;
-    
+    ScreenArray *screenArray;
     BOOL sendingRects;
-    
-    NSMutableData *dirtyScreenRegions;
-    RDScreenRes dirtyRegionsResolution;
-    CGRect dirtyRect;
 }
 @property(retain) GCDAsyncSocket *socket;
 @property(assign) id <WorkerManager> manager;
