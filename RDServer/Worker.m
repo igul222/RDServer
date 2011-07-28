@@ -170,7 +170,7 @@ static void screenRefreshCallback(CGRectCount count, const CGRect *rectArray, vo
     rects.retainCount = rects.count;
     dispatch_apply(rects.count, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(size_t i) {
         CGRect rect = rects.array[i];
-
+        
         if(CGRectEqualToRect(rect, CGRectZero)) {
             rects.retainCount--;
             if(rects.retainCount == 0) {
@@ -192,7 +192,7 @@ static void screenRefreshCallback(CGRectCount count, const CGRect *rectArray, vo
         [data appendData:[FORMAT(@"%@%04d%04d", SCREEN_RECT_MSG, (int)rect.origin.x, (int)(screenArray.height-rect.origin.y-rect.size.height)) dataUsingEncoding:NSUTF8StringEncoding]];
         [data appendData:screenshotData];
         [data appendData:EOF_DATA];
-        
+                
         [self.socket writeData:data withTimeout:TIMEOUT tag:DEFAULT_TAG];
     
         rects.retainCount--;
