@@ -15,8 +15,10 @@ typedef struct _RectArray {
 } RectArray;
 
 @interface ScreenArray : NSObject {
-    RDScreenRes resolution; 
-    BOOL *array;
+    RDScreenRes resolution;
+    int bytesPerRow;
+    unsigned char *array;
+    int arrayLength;
 }
 
 -(id)initWithSize:(RDScreenRes)size;

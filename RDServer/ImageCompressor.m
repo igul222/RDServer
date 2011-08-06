@@ -47,7 +47,7 @@ static NSData *turbo_make_jpeg(NSBitmapImageRep *imageRep, CGImageRef image) {
                buffer,
                &size, 
                TJ_420, // lowest quality subsampling option; see tJ docs 
-               0, // quality value 
+               50, // quality value 
                (alphaFirst ? TJ_ALPHAFIRST : 0) // flags
                );
     
