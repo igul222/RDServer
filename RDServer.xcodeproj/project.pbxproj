@@ -343,6 +343,9 @@
 /* Begin PBXProject section */
 		4C3F9C9B13CCCE7E00E8D57E /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
 			buildConfigurationList = 4C3F9C9E13CCCE7E00E8D57E /* Build configuration list for PBXProject "RDServer" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
