@@ -116,9 +116,9 @@ static int find_next_bit(const unsigned char *array,
                          BOOL look_for_set_bit,
                          BOOL return_negative_on_not_found) {
     
-    int byte_offset = bit_offset/8; //16000
+    int byte_offset = bit_offset/8;
     unsigned char byte;
-    if(look_for_set_bit) // thought! is it really supposed to be array[bit_offset]? byte offset, right?!?!
+    if(look_for_set_bit)
         byte = array[byte_offset] & leading_zeroes(bit_offset % 8);
     else
         byte = array[byte_offset] | leading_ones(bit_offset % 8);
@@ -204,7 +204,7 @@ static int find_next_bit(const unsigned char *array,
         while ((rect_beginning = find_next_bit(array, arrayLength, bit_offset, YES, YES)) != -1) {
             
             int rect_origin_x = (rect_beginning % bits_per_row);
-            // rect_row_end = ceil(rect_beginning / bits_per_row)
+            // the next line is basically equivalent to rect_row_end = ceil(rect_beginning / bits_per_row)
             int rect_row_end = ((rect_beginning + bits_per_row - 1) / bits_per_row) * bytesPerRow;
             if(rect_origin_x % bits_per_row == 0)
                 rect_row_end += bytesPerRow;
