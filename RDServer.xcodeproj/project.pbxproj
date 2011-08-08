@@ -44,8 +44,15 @@
 		4C9B2FC013D3A78F005D4FC1 /* pngquant.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9B2FAD13D3A78F005D4FC1 /* pngquant.m */; };
 		4C9B2FC113D3A78F005D4FC1 /* rwpng.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9B2FAF13D3A78F005D4FC1 /* rwpng.m */; };
 		4C9B2FC713D3A897005D4FC1 /* ImageCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9B2FC613D3A897005D4FC1 /* ImageCompressor.m */; };
+		4CBDB35B13EF5E8A00210009 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBDB35A13EF5E8A00210009 /* SenTestingKit.framework */; };
+		4CBDB35D13EF5E8A00210009 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBDB35C13EF5E8A00210009 /* Cocoa.framework */; };
+		4CBDB36713EF5E8A00210009 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CBDB36513EF5E8A00210009 /* InfoPlist.strings */; };
+		4CBDB36A13EF5E8A00210009 /* ScreenArrayHelpersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBDB36913EF5E8A00210009 /* ScreenArrayHelpersTests.m */; };
+		4CBDB37113EF5F2B00210009 /* ScreenArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE7E4E713DCB17D008A710E /* ScreenArray.m */; };
+		4CBDB37413EF5F7600210009 /* ScreenArrayHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBDB37313EF5F7600210009 /* ScreenArrayHelpers.m */; };
 		4CBE0C5413DA0A5C002A9198 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBE0C5313DA0A5C002A9198 /* libz.1.2.5.dylib */; };
 		4CE7E4E813DCB17D008A710E /* ScreenArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE7E4E713DCB17D008A710E /* ScreenArray.m */; };
+		4CECF46E13EF647E003008FA /* ScreenArrayHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBDB37313EF5F7600210009 /* ScreenArrayHelpers.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -119,6 +126,18 @@
 		4C9B2FAF13D3A78F005D4FC1 /* rwpng.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = rwpng.m; sourceTree = "<group>"; };
 		4C9B2FC513D3A897005D4FC1 /* ImageCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCompressor.h; sourceTree = "<group>"; };
 		4C9B2FC613D3A897005D4FC1 /* ImageCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCompressor.m; sourceTree = "<group>"; };
+		4CBDB35813EF5E8A00210009 /* RDServerLogicTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RDServerLogicTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CBDB35A13EF5E8A00210009 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		4CBDB35C13EF5E8A00210009 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		4CBDB35F13EF5E8A00210009 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		4CBDB36013EF5E8A00210009 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		4CBDB36113EF5E8A00210009 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4CBDB36413EF5E8A00210009 /* RDServerLogicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RDServerLogicTests-Info.plist"; sourceTree = "<group>"; };
+		4CBDB36613EF5E8A00210009 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4CBDB36813EF5E8A00210009 /* ScreenArrayHelpersTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenArrayHelpersTests.h; sourceTree = "<group>"; };
+		4CBDB36913EF5E8A00210009 /* ScreenArrayHelpersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreenArrayHelpersTests.m; sourceTree = "<group>"; };
+		4CBDB36B13EF5E8A00210009 /* RDServerLogicTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RDServerLogicTests-Prefix.pch"; sourceTree = "<group>"; };
+		4CBDB37313EF5F7600210009 /* ScreenArrayHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenArrayHelpers.m; sourceTree = "<group>"; };
 		4CBE0C5313DA0A5C002A9198 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
 		4CE7E4E613DCB17D008A710E /* ScreenArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenArray.h; sourceTree = "<group>"; };
 		4CE7E4E713DCB17D008A710E /* ScreenArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenArray.m; sourceTree = "<group>"; };
@@ -134,6 +153,15 @@
 				4C3F9CA913CCCE7E00E8D57E /* Cocoa.framework in Frameworks */,
 				4C196A4413D4CC4D00E3A3C8 /* libjpeg.a in Frameworks */,
 				4C196A4C13D4CD0D00E3A3C8 /* libturbojpeg.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CBDB35413EF5E8A00210009 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CBDB35B13EF5E8A00210009 /* SenTestingKit.framework in Frameworks */,
+				4CBDB35D13EF5E8A00210009 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,8 +186,10 @@
 			isa = PBXGroup;
 			children = (
 				4C3F9CAE13CCCE7E00E8D57E /* RDServer */,
+				4CBDB36213EF5E8A00210009 /* Logic tests */,
 				4C3F9CD813CCCEDF00E8D57E /* Vendor */,
 				4C3F9CAF13CCCE7E00E8D57E /* Supporting Files */,
+				4CBDB35913EF5E8A00210009 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -167,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				4C3F9CA413CCCE7E00E8D57E /* RDServer.app */,
+				4CBDB35813EF5E8A00210009 /* RDServerLogicTests.octest */,
 			);
 			name = Products;
 			path = ..;
@@ -307,6 +338,47 @@
 			path = pngquant;
 			sourceTree = "<group>";
 		};
+		4CBDB35913EF5E8A00210009 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CBDB35A13EF5E8A00210009 /* SenTestingKit.framework */,
+				4CBDB35C13EF5E8A00210009 /* Cocoa.framework */,
+				4CBDB35E13EF5E8A00210009 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4CBDB35E13EF5E8A00210009 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CBDB35F13EF5E8A00210009 /* AppKit.framework */,
+				4CBDB36013EF5E8A00210009 /* CoreData.framework */,
+				4CBDB36113EF5E8A00210009 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		4CBDB36213EF5E8A00210009 /* Logic tests */ = {
+			isa = PBXGroup;
+			children = (
+				4CBDB36813EF5E8A00210009 /* ScreenArrayHelpersTests.h */,
+				4CBDB36913EF5E8A00210009 /* ScreenArrayHelpersTests.m */,
+				4CBDB36313EF5E8A00210009 /* Supporting Files */,
+			);
+			name = "Logic tests";
+			path = RDServerLogicTests;
+			sourceTree = "<group>";
+		};
+		4CBDB36313EF5E8A00210009 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4CBDB36413EF5E8A00210009 /* RDServerLogicTests-Info.plist */,
+				4CBDB36513EF5E8A00210009 /* InfoPlist.strings */,
+				4CBDB36B13EF5E8A00210009 /* RDServerLogicTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		4CE7E4E513DCB099008A710E /* Worker helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -314,6 +386,7 @@
 				4C9B2FC613D3A897005D4FC1 /* ImageCompressor.m */,
 				4CE7E4E613DCB17D008A710E /* ScreenArray.h */,
 				4CE7E4E713DCB17D008A710E /* ScreenArray.m */,
+				4CBDB37313EF5F7600210009 /* ScreenArrayHelpers.m */,
 			);
 			name = "Worker helpers";
 			sourceTree = "<group>";
@@ -338,6 +411,24 @@
 			productReference = 4C3F9CA413CCCE7E00E8D57E /* RDServer.app */;
 			productType = "com.apple.product-type.application";
 		};
+		4CBDB35713EF5E8A00210009 /* RDServerLogicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CBDB36E13EF5E8A00210009 /* Build configuration list for PBXNativeTarget "RDServerLogicTests" */;
+			buildPhases = (
+				4CBDB35313EF5E8A00210009 /* Sources */,
+				4CBDB35413EF5E8A00210009 /* Frameworks */,
+				4CBDB35513EF5E8A00210009 /* Resources */,
+				4CBDB35613EF5E8A00210009 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RDServerLogicTests;
+			productName = RDServerLogicTests;
+			productReference = 4CBDB35813EF5E8A00210009 /* RDServerLogicTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -359,6 +450,7 @@
 			projectRoot = "";
 			targets = (
 				4C3F9CA313CCCE7E00E8D57E /* RDServer */,
+				4CBDB35713EF5E8A00210009 /* RDServerLogicTests */,
 			);
 		};
 /* End PBXProject section */
@@ -374,7 +466,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4CBDB35513EF5E8A00210009 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CBDB36713EF5E8A00210009 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4CBDB35613EF5E8A00210009 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4C3F9CA013CCCE7E00E8D57E /* Sources */ = {
@@ -412,6 +528,17 @@
 				4C9B2FC113D3A78F005D4FC1 /* rwpng.m in Sources */,
 				4C9B2FC713D3A897005D4FC1 /* ImageCompressor.m in Sources */,
 				4CE7E4E813DCB17D008A710E /* ScreenArray.m in Sources */,
+				4CBDB37413EF5F7600210009 /* ScreenArrayHelpers.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CBDB35313EF5E8A00210009 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CBDB36A13EF5E8A00210009 /* ScreenArrayHelpersTests.m in Sources */,
+				4CBDB37113EF5F2B00210009 /* ScreenArray.m in Sources */,
+				4CECF46E13EF647E003008FA /* ScreenArrayHelpers.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +567,14 @@
 				4C3F9CBE13CCCE7F00E8D57E /* en */,
 			);
 			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		4CBDB36513EF5E8A00210009 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CBDB36613EF5E8A00210009 /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -520,6 +655,36 @@
 			};
 			name = Release;
 		};
+		4CBDB36C13EF5E8A00210009 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RDServerLogicTests/RDServerLogicTests-Prefix.pch";
+				INFOPLIST_FILE = "RDServerLogicTests/RDServerLogicTests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		4CBDB36D13EF5E8A00210009 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RDServerLogicTests/RDServerLogicTests-Prefix.pch";
+				INFOPLIST_FILE = "RDServerLogicTests/RDServerLogicTests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -537,6 +702,15 @@
 			buildConfigurations = (
 				4C3F9CC313CCCE7F00E8D57E /* Debug */,
 				4C3F9CC413CCCE7F00E8D57E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CBDB36E13EF5E8A00210009 /* Build configuration list for PBXNativeTarget "RDServerLogicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CBDB36C13EF5E8A00210009 /* Debug */,
+				4CBDB36D13EF5E8A00210009 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
