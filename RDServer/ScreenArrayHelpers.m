@@ -61,6 +61,10 @@ static inline unsigned char one_at(const int location) {
     return 0b10000000 >> location;
 }
 
+static inline unsigned char zero_at(const int location) {
+    return leading_ones(location) | leading_zeroes(location+1);
+}
+
 static inline unsigned char bit_at(const unsigned char byte,
                                    const int location) {
     return (byte & one_at(location));
@@ -71,6 +75,42 @@ static inline void fill_row(unsigned char *array,
                             int length,
                             const BOOL value) {
     int byte = start_bit / 8;
+    
+    if(length < 8) {
+        // special case: if length is less than 8, the code below
+        // won't work (and it would be pointless to try to make it work), 
+        // so we'll take a slower, simpler approach.
+        
+        int bit = start_bit % 8;
+        while (length > 0 && bit < 8) {
+            if(value)
+                array[byte] = array[byte] | one_at(bit);
+            else
+                array[byte] = array[byte] & zero_at(bit);
+            
+            bit++;
+            length--;
+        }
+        
+        // it's possible that we've run out of room on that byte without
+        // finishing the row fill, so we handle one more byte here. note
+        // that this approach (length < 8) will never need to handle more
+        // than two bytes.
+        if(length > 0) {
+            byte++;
+            bit = 0;
+            while (length > 0) {
+                if(value)
+                    array[byte] = array[byte] | one_at(bit);
+                else
+                    array[byte] = array[byte] & zero_at(bit);
+                bit++;
+                length--;
+            }
+        }
+        
+        return;
+    }
     
     // write the first byte
     if(value)
@@ -114,6 +154,8 @@ static int find_next_bit(const unsigned char *array,
                          BOOL look_for_set_bit,
                          BOOL return_negative_on_not_found) {
     
+   // NSLog(@"FNB(len: %i, offset: %i, %i, %i)", array_length, bit_offset, !!look_for_set_bit, !!return_negative_on_not_found);
+    
     int byte_offset = bit_offset/8;
     unsigned char byte;
     if(look_for_set_bit)
@@ -136,12 +178,16 @@ static int find_next_bit(const unsigned char *array,
     if(byte_offset == array_length)
         return (return_negative_on_not_found ? -1 : byte_offset * 8);
     
-    int int_byte = (int)(look_for_set_bit ? byte : ~byte);
+    if(!look_for_set_bit)
+        byte = (unsigned char)(~byte);
+    int int_byte = (int)byte;
     int msb;
     asm("bsrl %1,%0" 
         : "=r"(msb) 
         : "r"(int_byte));
     msb = 7 - msb;
+    
+    //NSLog(@"returning (%i * 8) + %i; int_byte = %x",byte_offset, msb, int_byte);
     
     return (byte_offset * 8) + msb;
 }

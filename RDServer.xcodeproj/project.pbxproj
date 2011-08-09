@@ -53,6 +53,10 @@
 		4CBE0C5413DA0A5C002A9198 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBE0C5313DA0A5C002A9198 /* libz.1.2.5.dylib */; };
 		4CE7E4E813DCB17D008A710E /* ScreenArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE7E4E713DCB17D008A710E /* ScreenArray.m */; };
 		4CECF46E13EF647E003008FA /* ScreenArrayHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBDB37313EF5F7600210009 /* ScreenArrayHelpers.m */; };
+		4CECF47713EF70D9003008FA /* ScreenByteArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CECF47413EF70CC003008FA /* ScreenByteArray.m */; };
+		4CECF47A13EF7111003008FA /* ScreenArrayTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CECF47913EF7111003008FA /* ScreenArrayTest.m */; };
+		4CECF47C13EF8015003008FA /* ScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3F9CE013CCD07600E8D57E /* ScreenController.m */; };
+		4CECF47D13EF8022003008FA /* AppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3F9CDD13CCCFC000E8D57E /* AppUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -141,6 +145,11 @@
 		4CBE0C5313DA0A5C002A9198 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
 		4CE7E4E613DCB17D008A710E /* ScreenArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenArray.h; sourceTree = "<group>"; };
 		4CE7E4E713DCB17D008A710E /* ScreenArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenArray.m; sourceTree = "<group>"; };
+		4CECF47413EF70CC003008FA /* ScreenByteArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenByteArray.m; sourceTree = "<group>"; };
+		4CECF47513EF70CC003008FA /* ScreenByteArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenByteArray.h; sourceTree = "<group>"; };
+		4CECF47813EF7111003008FA /* ScreenArrayTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenArrayTest.h; sourceTree = "<group>"; };
+		4CECF47913EF7111003008FA /* ScreenArrayTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenArrayTest.m; sourceTree = "<group>"; };
+		4CECF47B13EF7F73003008FA /* RectArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RectArray.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -363,6 +372,8 @@
 			children = (
 				4CBDB36813EF5E8A00210009 /* ScreenArrayHelpersTests.h */,
 				4CBDB36913EF5E8A00210009 /* ScreenArrayHelpersTests.m */,
+				4CECF47813EF7111003008FA /* ScreenArrayTest.h */,
+				4CECF47913EF7111003008FA /* ScreenArrayTest.m */,
 				4CBDB36313EF5E8A00210009 /* Supporting Files */,
 			);
 			name = "Logic tests";
@@ -384,8 +395,11 @@
 			children = (
 				4C9B2FC513D3A897005D4FC1 /* ImageCompressor.h */,
 				4C9B2FC613D3A897005D4FC1 /* ImageCompressor.m */,
+				4CECF47B13EF7F73003008FA /* RectArray.h */,
 				4CE7E4E613DCB17D008A710E /* ScreenArray.h */,
 				4CE7E4E713DCB17D008A710E /* ScreenArray.m */,
+				4CECF47513EF70CC003008FA /* ScreenByteArray.h */,
+				4CECF47413EF70CC003008FA /* ScreenByteArray.m */,
 				4CBDB37313EF5F7600210009 /* ScreenArrayHelpers.m */,
 			);
 			name = "Worker helpers";
@@ -539,6 +553,10 @@
 				4CBDB36A13EF5E8A00210009 /* ScreenArrayHelpersTests.m in Sources */,
 				4CBDB37113EF5F2B00210009 /* ScreenArray.m in Sources */,
 				4CECF46E13EF647E003008FA /* ScreenArrayHelpers.m in Sources */,
+				4CECF47713EF70D9003008FA /* ScreenByteArray.m in Sources */,
+				4CECF47A13EF7111003008FA /* ScreenArrayTest.m in Sources */,
+				4CECF47C13EF8015003008FA /* ScreenController.m in Sources */,
+				4CECF47D13EF8022003008FA /* AppUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,11 +8,9 @@
 #import "ScreenController.h"
 #import "RectArray.h"
 
-@interface ScreenArray : NSObject {
-    RDScreenRes resolution;
-    int bytesPerRow;
-    unsigned char *array;
-    int arrayLength;
+@interface ScreenByteArray : NSObject {
+    RDScreenRes resolution; 
+    BOOL *array;
 }
 
 -(id)initWithSize:(RDScreenRes)size;
